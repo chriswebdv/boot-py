@@ -1,9 +1,13 @@
-def get_punched(health, armor):
-    # ?
+def get_punched(health, armor=0):
+    new_damage = 50 - armor
+    new_health = health - new_damage
+    return new_health
 
 
-def get_slashed(health, armor):
-    # ?
+def get_slashed(health, armor=0):
+    new_damage = 100 - armor
+    new_health = health - new_damage
+    return new_health
 
 
 # Don't touch below this line
