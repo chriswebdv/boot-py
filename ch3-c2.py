@@ -1,5 +1,8 @@
 def enchant_and_attack(target_health, damage, weapon):
-    # ?
+    echanted_damage = damage + 10
+    new_health = target_health - echanted_damage
+    enchanted_weapon = f"enchanted {weapon}"
+    return enchanted_weapon, new_health
 
 
 # Don't modify below this line
