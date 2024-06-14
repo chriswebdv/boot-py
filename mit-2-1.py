@@ -1,3 +1,3 @@
 verb = input("Give me any verb: ")
 print(f"I can {verb} better than you")
-print(verb * 7)
+print((verb + " ") * 7)
