@@ -3,6 +3,7 @@ def unlock_achievement(before_xp, ach_xp, ach_name):
     ach_name = f"Achievement Unlocked: {ach_name}"
     print(players_xp)
     print(ach_name)
+    return players_xp, ach_name
    
     
 
