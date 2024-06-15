@@ -1,5 +1,7 @@
 def total_xp(level, xp_to_add):
-    level_to_xp = level * 100
+    convert_xp = level * 100
+    xp_to_add = xp_to_add + convert_xp
+    return xp_to_add
     
 
 
