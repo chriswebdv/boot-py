@@ -1,5 +1,7 @@
 def unlock_achievement(before_xp, ach_xp, ach_name):
-    return None, None
+    players_xp = before_xp + ach_xp
+    print(players_xp)
+    
 
 run_cases = [
     (100, 20, "Speedster", (120, "Achievement Unlocked: Speedster")),
