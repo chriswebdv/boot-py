@@ -1,6 +1,5 @@
 count = 0
 
 for i in range(10):
-    count += i
-
-print(count)
+    if i % 2 == 0:
+        print(i)
