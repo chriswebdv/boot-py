@@ -1,4 +1,5 @@
 s = "abca"
 letter = ""
 for char in s:
-   print(s)
+   letter += char
+   print(letter)
