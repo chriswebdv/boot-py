@@ -1,5 +1,6 @@
 def get_hurt(current_health, damage):
-    pass
+    current_health -= damage
+    return current_health
 
 run_cases = [
     (1000, 100, 900),
