@@ -1,9 +1,10 @@
 # find the secret number in a range
-
-secret_num = 7
+found = False
+secret_num = 20
 
 for num in range(1, 11):
     if num == secret_num:
         print("secret number found!")
-    else:
-        print("not found")
+        found = True
+if not found:
+    print("Not found")
