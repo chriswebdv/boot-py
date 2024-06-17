@@ -1,5 +1,7 @@
 def body_parts(num_heads, num_arms, num_fingers):
-    pass
+    num_heads = int(num_heads,2)
+    print(num_heads)
+    return num_heads
 
 run_cases = [
     ("1", "10", "1010", (1, 2, 10)),
