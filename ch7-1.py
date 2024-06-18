@@ -1,5 +1,8 @@
 def player_1_wins(player_1_score, player_2_score):
-    pass
+    if player_1_score > player_2_score:
+        return True
+    else:
+        return False
 
 run_cases = [
     (5, 6, False),
