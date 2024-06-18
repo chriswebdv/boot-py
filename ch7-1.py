@@ -2,4 +2,6 @@
 # Otherwise return false
 
 def div_by(n, d):
-    pass
+    return n % d == 0
+
+print(div_by(11, 2))
