@@ -3,13 +3,10 @@ def combat_evaluation(player_power, enemy_defense):
 
     if player_power > enemy_defense:
         advantage = True
-        return advantage
     elif player_power == enemy_defense:
         evenly_matched = True
-        return evenly_matched
     else:
         disadvantage = True
-        return disadvantage
 
     return advantage, disadvantage, evenly_matched
 
