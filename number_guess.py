@@ -14,5 +14,9 @@ print(numbers_game())
 while ask_user != numbers_game():
     if ask_user > numbers_game():
         print("Too high!")
+        ask_user = int(input("Guess my secret number: "))
+    elif ask_user < numbers_game():
+        print("Too low!")
+        ask_user = int(input("Guess my secret number: "))
 
 
