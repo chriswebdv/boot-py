@@ -4,7 +4,7 @@ import random
 
 def numbers_game():
     for i in range(100):
-        x = random.randint(1, 5)
+        x = random.randint(1, 100)
         return x
 
 
@@ -12,10 +12,10 @@ ask_user = int(input("Guess my secret number: "))
 
 while ask_user != numbers_game():
     if ask_user > numbers_game():
-        print(f"The correct number is {numbers_game()} Too low!")
+        print(f"The correct number is {numbers_game()} Too high!")
         ask_user = int(input("Guess my secret number: "))
     elif ask_user < numbers_game():
-        print(f"The correct number is {numbers_game()} Too high!")
+        print(f"The correct number is {numbers_game()} Too low!")
         ask_user = int(input("Guess my secret number: "))
 
 print("Correcto Mundo! You guessed right")
