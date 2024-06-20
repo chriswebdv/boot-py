@@ -1,6 +1,10 @@
+import random
+
 #Write a function with not arguments to guess a number from 1 - 100
 
 def numbers_game():
-    return
-
-print(numbers_game)
+    for i in range(100):
+        x = random.randint(1, 100)
+        return x
+    
+print(numbers_game())
