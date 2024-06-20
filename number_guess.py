@@ -1,0 +1,1 @@
+#Write a function with not arguments to guess a number from 1 - 100
