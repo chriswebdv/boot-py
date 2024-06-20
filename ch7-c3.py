@@ -1,5 +1,6 @@
 def has_enough_gas(gallons_in_car, miles_one_way, miles_per_gallon):
-    pass
+    gallons_needed = 2(miles_one_way * miles_per_gallon)
+    return gallons_needed
 
 run_cases = [
     (8, 50, 22, True),
