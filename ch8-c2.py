@@ -1,6 +1,6 @@
 def calculate_squares(start, end):
     for i in range(start, end):
-        print(i)
+        print(f"{i} squared = {i*i}")
 
 
 # Don't edit below this line
