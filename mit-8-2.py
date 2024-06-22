@@ -4,6 +4,9 @@ def is_triangular(n):
         total += i
         if total == n:
             print(True)
-    print(False)
+        else:
+            print(False)
 
-is_triangular(4)
+print(is_triangular(4))
+print(is_triangular(6))
+print(is_triangular(1))
