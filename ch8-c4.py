@@ -1,5 +1,5 @@
 def is_prime(number):
-    pass
+    if number > 1 and number % number == 1 and
 
 
 run_cases = [
