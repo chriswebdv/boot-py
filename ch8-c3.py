@@ -1,5 +1,6 @@
 def calculate_experience_points(level):
-    pass
+    for i in range(0, level):
+        print(i)
 
 run_cases = [
     (2, 5),
