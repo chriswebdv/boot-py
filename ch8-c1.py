@@ -1,5 +1,6 @@
 def countdown_to_blastoff():
-    # ?
+    for i in range(10, 1):
+        print(i)
 
 
 # Don't edit below this line
