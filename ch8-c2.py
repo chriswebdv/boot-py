@@ -1,5 +1,5 @@
 def calculate_squares(start, end):
-    for i in range(start, end):
+    for i in range(start, end - 1):
         print(f"{i} squared = {i*i}")
 
 
