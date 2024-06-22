@@ -1,11 +1,11 @@
 def is_triangular(n):
     total = 0
-    for i in range(n):
+    for i in range(n+1):
         total += i
         if total == n:
-            print(True)
-        else:
-            print(False)
+            return(True)
+    
+    return(False)
 
 print(is_triangular(4))
 print(is_triangular(6))
