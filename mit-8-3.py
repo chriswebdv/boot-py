@@ -1,5 +1,8 @@
 def apply(criteria, n):
-    pass
+    for i in range(n):
+        if i == criteria:
+            i += 1
+        print(i)
 
 
 def criteria(n):
@@ -8,3 +11,5 @@ def criteria(n):
     else:
         return False
 
+
+apply(criteria, 10)
