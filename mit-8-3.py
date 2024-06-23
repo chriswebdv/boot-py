@@ -2,7 +2,7 @@ def apply(criteria, n):
     for i in range(n):
         if i == criteria:
             i += 1
-        print(i)
+    print(i)
 
 
 def criteria(n):
@@ -12,4 +12,4 @@ def criteria(n):
         return False
 
 
-apply(criteria, 10)
+apply(criteria, 20)
