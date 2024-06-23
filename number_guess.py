@@ -4,7 +4,7 @@ import random
 
 def numbers_game():
     for i in range(100):
-        x = random.randint(1, 100)
+        x = random.randint(1, 50)
         return x
 
 
