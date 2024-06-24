@@ -5,7 +5,8 @@ def check_character_levels():
     # don't touch above this line
 
     for i, j in zip(old_character_levels, new_character_levels):
-        print(i, j)
+        if i != j:
+            print(i, j)
 
 
 # don't touch below this line
