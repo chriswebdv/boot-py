@@ -2,13 +2,14 @@
 import random
 
 # create list
-rps = ["rock", "paper", "sciccors"]
+rps = ["rock", "paper", "scissors"]
 
 def computer_answer(answer):
     for i in rps:
-        print(i)
+        choice = random.choice(rps)
+    return choice
 
-computer_answer(rps)
+print(computer_answer(rps))
 
 
 
