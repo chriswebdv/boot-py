@@ -33,6 +33,7 @@ while count < 5:
     
     if computer_answer(rps) == "rock" and human_input == "paper":
         count += 1
+        human_score += 1
         print("Human won!")
         human_input = input("Answer: ")
 
@@ -40,6 +41,7 @@ while count < 5:
     
     if computer_answer(rps) == "paper" and human_input == "rock":
         count += 1
+        computer_score += 1
         print("computer won!")
         human_input = input("Answer: ")
 
@@ -47,6 +49,7 @@ while count < 5:
 
     if computer_answer(rps) == "rock" and human_input == "scissors":
         count += 1
+        computer_score += 1
         print("Computer won!")
         human_input = input("Answer: ")
 
@@ -54,6 +57,7 @@ while count < 5:
     
     if computer_answer(rps) == "scissors" and human_input == "rock":
         count += 1
+        human_score += 1
         print("Human won!")
         human_input = input("Answer: ")
 
@@ -61,6 +65,7 @@ while count < 5:
     
     if computer_answer(rps) == "paper" and human_input == "scissors":
         count += 1
+        human_score += 1
         print("Human won!")
         human_input = input("Answer: ")
 
@@ -68,11 +73,21 @@ while count < 5:
     
     if computer_answer(rps) == "scissors" and human_input == "paper":
         count += 1
+        computer_score += 1
         print("Computer won!")
         human_input = input("Answer: ")
 
 
     
+## write final conditional to determine which player won the set of 5 games played
 
+if computer_score == human_score:
+    print("Tie games!")
+
+if computer_score > human_score:
+    print("Congrats! computer won!")
+
+if computer_score < human_score:
+    print("Human won!!")
 
     
