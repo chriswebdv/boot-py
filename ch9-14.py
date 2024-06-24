@@ -5,7 +5,9 @@ def check_character_levels():
     # don't touch above this line
 
     for i in range(0, len(old_character_levels)):
-        # ?
+        for i in range(0, len(new_character_levels)):
+            if old_character_levels[i] == new_character_levels[i]:
+                print(i)
 
 
 # don't touch below this line
