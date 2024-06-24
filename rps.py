@@ -23,34 +23,55 @@ print("Choose between paper, rock or scissors, write in lowercase: ")
 human_input = input("Answer: ")
 print(human_input)
 
-while count <= 5:
+while count < 5:
     if computer_answer(rps) == human_input:
-        print("It's a tie!")
         count += 1
+        computer_score += 1
+        human_score += 1
+        print("It's a tie!")
+        human_input = input("Answer: ")
     
     if computer_answer(rps) == "rock" and human_input == "paper":
-        print("Human won!")
         count += 1
+        print("Human won!")
+        human_input = input("Answer: ")
+
+
     
     if computer_answer(rps) == "paper" and human_input == "rock":
-        print("computer won!")
         count += 1
+        print("computer won!")
+        human_input = input("Answer: ")
+
+
 
     if computer_answer(rps) == "rock" and human_input == "scissors":
-        print("Computer won!")
         count += 1
+        print("Computer won!")
+        human_input = input("Answer: ")
+
+
     
     if computer_answer(rps) == "scissors" and human_input == "rock":
-        print("Human won!")
         count += 1
+        print("Human won!")
+        human_input = input("Answer: ")
+
+
     
     if computer_answer(rps) == "paper" and human_input == "scissors":
-        print("Human won!")
         count += 1
+        print("Human won!")
+        human_input = input("Answer: ")
+
+
     
     if computer_answer(rps) == "scissors" and human_input == "paper":
-        print("Computer won!")
         count += 1
+        print("Computer won!")
+        human_input = input("Answer: ")
+
+
     
 
 
