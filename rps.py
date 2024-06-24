@@ -24,4 +24,34 @@ human_input = input("Answer: ")
 print(human_input)
 
 while count <= 5:
-    pass
+    if computer_answer(rps) == human_input:
+        print("It's a tie!")
+        count += 1
+    
+    if computer_answer(rps) == "rock" and human_input == "paper":
+        print("Human won!")
+        count += 1
+    
+    if computer_answer(rps) == "paper" and human_input == "rock":
+        print("computer won!")
+        count += 1
+
+    if computer_answer(rps) == "rock" and human_input == "scissors":
+        print("Computer won!")
+        count += 1
+    
+    if computer_answer(rps) == "scissors" and human_input == "rock":
+        print("Human won!")
+        count += 1
+    
+    if computer_answer(rps) == "paper" and human_input == "scissors":
+        print("Human won!")
+        count += 1
+    
+    if computer_answer(rps) == "scissors" and human_input == "paper":
+        print("Computer won!")
+        count += 1
+    
+
+
+    
