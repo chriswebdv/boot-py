@@ -1,6 +1,11 @@
 def find_max(nums):
     max_so_far = float("-inf")
-    pass
+    for num in nums:
+        if num > max_so_far:
+            return max(nums)
+        else:
+            return max_so_far
+        
 
 
 run_cases = [([1, 2, 3, 4, 5], 5), ([1, 2, 300, 4, 5], 300)]
