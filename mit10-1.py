@@ -5,4 +5,4 @@ def make_ordered_list(n):
     print(int_list)
 
 
-make_ordered_list(7)
+make_ordered_list(6)
