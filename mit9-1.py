@@ -1,8 +1,9 @@
 vowels = ("a", "e", "i", "o", "u")
-
 def char_counts(s):
-    for i in vowels:
-        print(i)
+    total_vowels = 0
+    for i in range(0, len(s)):
+        if s[i] in vowels:
+            total_vowels += len(s[i])
+    print(total_vowels)
 
-
-char_counts()
+char_counts("tanko")
