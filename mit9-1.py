@@ -10,4 +10,4 @@ def char_counts(s):
 
     return (total_vowels, total_consonants)
 
-print(char_counts("mamacitas"))
+print(char_counts("valparaisos"))
