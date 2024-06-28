@@ -1,5 +1,9 @@
 def get_first_item(items):
-    pass
+    for i in items:
+        if i in items:
+            return items[0]
+        else:
+            return "ERROR"
 
 
 run_cases = [([1, 2], 1), (["Healing Potion"], "Healing Potion")]
