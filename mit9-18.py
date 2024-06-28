@@ -1,7 +1,6 @@
 def concatenate_favorites(favorite_weapons, favorite_armor, favorite_items):
-    pass
-
-
+    new_list = favorite_weapons + favorite_armor + favorite_items
+    return new_list
 
 run_cases = [
     (
