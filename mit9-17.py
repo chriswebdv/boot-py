@@ -1,5 +1,8 @@
 def get_champion_slices(champions):
-    pass
+    champ1 = champions[3:]
+
+
+    return champ1
 
 
 run_cases = [
