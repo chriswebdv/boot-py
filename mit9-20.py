@@ -1,5 +1,8 @@
 def trim_strongholds(strongholds):
-    pass
+    del strongholds[0]
+    del strongholds[-2:]
+    new_list = strongholds
+    return new_list
 
 
 run_cases = [
