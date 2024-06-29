@@ -1,5 +1,15 @@
 def filter_messages(messages):
-    pass
+    clean_list = []
+    junk_list = []
+
+    for i in messages:
+        for j in messages:
+            if messages[i][j] == "dang":
+                junk_list.append(messages[i][j])
+                return junk_list
+            else:
+                clean_list.append(messages[i][j])
+                return clean_list
 
 
 
