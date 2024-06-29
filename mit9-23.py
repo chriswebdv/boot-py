@@ -1,8 +1,5 @@
 def reverse_array(items):
-
-    for i in range(-1, len(items)):
-        items += i
-    return items
+    return items[::-1]
 
 run_cases = [
     (
