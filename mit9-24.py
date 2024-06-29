@@ -1,16 +1,23 @@
 def filter_messages(messages):
     clean_list = []
-    junk_list = []
+    junk_words_count = []
 
     for i in range(len(messages)):
-        str_from_list = " ".join(messages)
-        if str_from_list[i]== "dang":
-            junk_list.append(str_from_list[i])
-            print("this", junk_list)
+        words = messages[i].split()
+        print("test1", words)
+        new_list = []
+        counter = 0
+
+        if words[i] == "dang":
+            counter += 1
+            print(counter)
         else:
-            clean_list.append(messages[i])
-            print("this", clean_list)
-            return clean_list
+            print("print", words[i])
+            new_list.append(words[i])
+            print(new_list)
+        
+
+   
 
 
 
