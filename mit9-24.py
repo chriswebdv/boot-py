@@ -5,16 +5,19 @@ def filter_messages(messages):
     for i in messages:
         words = i.split()
         print("test1", words)
-    new_list = []
-    counter = 0
+        new_list = []
+        counter = 0
 
-    if words[i] == "dang":
-        counter += 1
-        print(counter)
-    else:
-        print("print", words[i])
-        new_list.append(words[i])
-        print(new_list)
+        for i in words:
+            if i == "dang":
+                counter += 1
+                junk_words_count.append(counter)
+                print(junk_words_count)
+            else:
+                new_list.append(i)
+                clean_sentence = " ".join(new_list)
+                clean_list.append(clean_sentence)
+                print(clean_list)
         
 
    
@@ -23,4 +26,4 @@ def filter_messages(messages):
 
 list1 = ["darn it", "this dang thing won't work", "lets fight one on one"]
 list2 = ["darn it", "this thing won't work", "lets fight one on one"]
-filter_messages(list1)
+filter_messages(list2)
