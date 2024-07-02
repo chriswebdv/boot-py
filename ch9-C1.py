@@ -9,6 +9,7 @@ def get_odds_and_evens(numbers):
         else:
             num_odds += 1
             
+    return num_odds, num_evens      
 
 
 run_cases = [
