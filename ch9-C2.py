@@ -8,6 +8,7 @@ def split_players_into_teams(players):
         else:
             odd_team.append(players[i])
     
+    return even_team, odd_team
 
 
 
