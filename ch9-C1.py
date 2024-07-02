@@ -3,8 +3,12 @@ def get_odds_and_evens(numbers):
     num_evens = 0
 
     # Don't touch above this line
-
-    pass
+    for i in numbers:
+        if i % 2 == 0:
+            num_evens +=1
+        else:
+            num_odds += 1
+            
 
 
 run_cases = [
