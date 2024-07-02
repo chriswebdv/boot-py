@@ -9,14 +9,18 @@ def filter_messages(messages):
         counter = 0
 
         for i in words:
+            print("wordy", i)
             if "dang" in words:
                 counter += 1
                 junk_words_count.append(counter)
                 
             else:
                 new_list.append(i)
+                print("new-list", new_list)
                 clean_sentence = " ".join(new_list)
+                print("Clean-words", clean_sentence)
                 clean_list.append(clean_sentence)
+                print("Clean-list", clean_list)
                 
         
     return clean_list, junk_words_count
