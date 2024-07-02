@@ -1,5 +1,14 @@
 def split_players_into_teams(players):
-    pass
+    even_team = []
+    odd_team = []
+
+    for i in range(len(players)):
+        if i % 2 == 0:
+            even_team.append(players[i])
+        else:
+            odd_team.append(players[i])
+    
+
 
 
 run_cases = [
