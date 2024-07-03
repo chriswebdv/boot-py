@@ -3,10 +3,10 @@ def get_test_score(answer_sheet, student_answers):
     for i,j in zip(answer_sheet, student_answers):
         if i != j:
             count += 1
-            print("count", count)
-            total = (1 - (count / len(student_answers))) * 100
-            return total
-    
+
+    total = 100 - ((count / len(student_answers)) * 100)
+    return total
+                
 
 run_cases = [
     (
