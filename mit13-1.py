@@ -1,5 +1,5 @@
 def pairwise_div(Lnum, Ldenom):
-    assert L1 != [] or L2 != [], "You have an empty list"
+    assert len(Lnum) != 0 and len(Ldenom) != 0, "You have an empty list"
     num_list = []
     for num, denom in zip(Lnum, Ldenom):
         try:
