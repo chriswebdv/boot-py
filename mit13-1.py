@@ -6,8 +6,12 @@ def pairwise_div(Lnum, Ldenom):
             num_list.append(total)
         except:
             raise ZeroDivisionError("You are dividing by zero")
+        
+    return num_list
 
 
 L1 = [4,5,6]
-L2 = [1,2,0]
+L2 = [1,2,10]
+
+print(pairwise_div(L1, L2))
 
