@@ -1,5 +1,13 @@
 def get_character_record(name, server, level, rank):
-    pass
+    dict = {
+        "name" : name,
+        "server" : server,
+        "level" : level,
+        "rank" : rank,
+        "id" : f"{name}#{server}"
+        
+    }
+    return dict
 
 
 run_cases = [
