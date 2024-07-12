@@ -1,12 +1,10 @@
 def get_most_common_enemy(enemies_dict):
     max_so_far = float("-inf")
     enemy_name = None
-    for enemy in enemies_dict:
-        if enemies_dict[enemy] > max_so_far:
-            enemy_name = enemy
-        else:
-            return None
-        
+    for k, v in enemies_dict.items():
+        if v > max_so_far:
+            max_so_far = v
+            enemy_name = k
     return enemy_name
 
 
